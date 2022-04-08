@@ -50,13 +50,13 @@ var swiper = new Swiper(".review-slider", {
     loop: true,
     breakpoints: {
         0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         640: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
         },
         1024: {
             slidesPerView: 3,
