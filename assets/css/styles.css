@@ -286,7 +286,7 @@ img {
 .home__img {
   width: 300px;
   justify-self: center;
-  margin-top: -1rem;
+  margin-top: 1rem;
 }
 
 .home__car {
@@ -295,7 +295,7 @@ img {
   align-items: center;
   column-gap: 4rem;
   margin-bottom: 1rem;
-  margin-top: -1rem;
+  margin-top: 1rem;
 }
 
 .home__car-name {
@@ -763,6 +763,7 @@ h3.tittle.reserve {
     padding: 28px;
   }
 
+
   .book-reservation label {
     font-size: 13.4px;
     margin-left: 9px;
@@ -844,7 +845,7 @@ h3.tittle.reserve {
   }
 }
 
-@media(max-width:736px) {
+@media(max-width:767px) {
   .portfolioo-popup {
     width: 80%;
   }
@@ -1074,6 +1075,7 @@ h3.tittle.reserve {
   padding-bottom: 1rem;
 }
 
+
 .headingg {
   text-align: center;
   color: var(--black);
@@ -1100,7 +1102,7 @@ h3.tittle.reserve {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  font-size: 3rem;
+  font-size: 1.9rem;
   color: #ccc;
 }
 
@@ -1125,16 +1127,9 @@ h3.tittle.reserve {
 
 .review .slide .user h3 {
   color: var(--black);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: .5rem;
   text-transform: capitalize;
-}
-
-.review .slide .user i {
-  font-size: 1rem;
-  color: var(--green);
-  color: var(--first-color-alt);
-  color: #ccc;
 }
 
 .review .slide p {
@@ -1184,14 +1179,15 @@ h3.tittle.reserve {
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .buttonn {
-  /* display: inline-block; */
+  display: inline-block;
   text-align: center;
   position: relative;
-  margin-top: 2rem !important;
   margin-left: 0.7rem;
+  /* margin-top: 2rem; */
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem 2rem;
@@ -1249,7 +1245,8 @@ h3.tittle.reserve {
 .conntact-info-item {
   margin: 0 0 30px;
   padding: 0 0 0 20px;
-  font-size: 20px;
+  margin-left: 3rem;
+  font-size: 1.1rem;
 }
 
 .conntact-info-item h3 {
@@ -1460,11 +1457,101 @@ h3.tittle.reserve {
 
 /* For medium devices */
 
+@media (max-width: 450px) {
+
+  .conntact-info-item {
+    width: 100%;
+    margin-right: 3rem;
+    /* margin-right: 3rem; */
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .conntact-info-item .soccial-links {
+    font-size: 1rem;
+    /* display: inline-block; */
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .conntact-form {
+    width: 100%;
+    margin-right: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conntact-info-item {
+    width: 100%;
+    margin-right: 3rem;
+    margin-right: 3rem;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  /* 
+  .about__data .about__title {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .about__data {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  } */
+}
+
+@media (max-width: 767px) {
+
+  .about__data .about__title {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .about__data {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .conntact-form {
+    width: 100%;
+    margin-right: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conntact-info {
+    order: -1;
+    margin-bottom: 1.2rem;
+  }
+
+  .conntact-info-item {
+    width: 100%;
+    margin-right: 3rem;
+    margin-right: 3rem;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .about__group {
     width: 350px;
     justify-self: center;
   }
+
 
   .feature__map {
     left: 0;
@@ -1537,6 +1624,12 @@ h3.tittle.reserve {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .nav__logo {
