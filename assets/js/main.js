@@ -19,6 +19,28 @@ if (navClose) {
     })
 }
 
+/*=============== Portofilio Item Details===============*/
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("view-project-btn")) {
+        togglePortfolioPopup();
+    }
+});
+
+function togglePortfolioPopup() {
+    document.querySelector(".portfolioo-popup").classList.toggle("open");
+    document.body.classList.toggle("hide-scrolling");
+    document.querySelector(".main").classList.toggle("fade-out");
+    document.querySelector(".header").classList.toggle("fade-out");
+}
+document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
+
+
+/*=============== Portofilio Item Details===============*/
+
+
+
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -40,6 +62,7 @@ window.addEventListener('scroll', scrollHeader)
 
 /*=============== POPULAR SWIPER ===============*/
 
+
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     centeredSlides: true,
@@ -53,16 +76,32 @@ var swiper = new Swiper(".review-slider", {
             slidesPerView: 1.2,
         },
         640: {
-            slidesPerView: 1.5,
-        },
-        768: {
             slidesPerView: 2,
         },
+        768: {
+            slidesPerView: 2.5,
+        },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 3.2,
         },
     },
 });
+
+
+
+// var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 20,
+//     loop: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+// });
+
+
+
+/*=============== POPULAR SWIPER ===============*/
 
 /*=============== MIXITUP FILTER FEATURED ===============*/
 
@@ -113,6 +152,7 @@ sr.reveal(`.home__title`)
 sr.reveal(`.home__subtitle`, { delay: 500 })
 sr.reveal(`.home__elec`, { delay: 600 })
 sr.reveal(`.home__img`, { delay: 800 })
+sr.reveal(`.homee__img`, { delay: 800 })
 sr.reveal(`.home__car-data`, { delay: 900, interval: 100, origin: 'bottom' })
 sr.reveal(`.home__button`, { delay: 1000, origin: 'bottom' })
 sr.reveal(`.about__group`, { origin: 'left' })
