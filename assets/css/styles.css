@@ -721,7 +721,10 @@ h3.tittle.reserve {
   }
 
   .portfolioo-popup {
-    width: 60%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .book-reservation label {
@@ -735,7 +738,10 @@ h3.tittle.reserve {
 
 @media(max-width:1080px) {
   .portfolioo-popup {
-    width: 70%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .book-reservation input[type="text"],
@@ -763,6 +769,12 @@ h3.tittle.reserve {
     padding: 28px;
   }
 
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 
   .book-reservation label {
     font-size: 13.4px;
@@ -783,17 +795,38 @@ h3.tittle.reserve {
   .make input[type=submit] {
     font-size: 1em;
   }
+
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media(max-width:900px) {
   .book-reservation select.form-control {
     width: 96%;
   }
+
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media(max-width:800px) {
   .portfolioo-popup {
     width: 79%;
+  }
+
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .copy p {
@@ -806,6 +839,13 @@ h3.tittle.reserve {
 @media(max-width:768px) {
   h1 {
     margin: 3.5em 0;
+  }
+
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .copy.w3ls {
@@ -823,6 +863,13 @@ h3.tittle.reserve {
     word-spacing: 0px;
     letter-spacing: 3px;
     margin: 1.18em 0;
+  }
+
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .make input[type=submit] {
@@ -858,6 +905,13 @@ h3.tittle.reserve {
   .book-reservation input[type="time"],
   .book-reservation input[type="email"] {
     width: 86%;
+  }
+
+  .portfolioo-popup {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -1487,7 +1541,7 @@ h3.tittle.reserve {
 
   .conntact-info-item {
     width: 100%;
-    margin-right: 3rem;
+    margin-left: 3rem;
     margin-right: 3rem;
     /* text-align: center; */
     /* align-items: center; */
