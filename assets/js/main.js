@@ -24,12 +24,13 @@ if (navClose) {
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("view-project-btn")) {
         togglePortfolioPopup();
+        document.querySelector(".portfolio-popup").scrollTo(0, 0);
     }
 });
 
 function togglePortfolioPopup() {
     document.querySelector(".portfolioo-popup").classList.toggle("open");
-    // document.body.classList.toggle("hide-scrolling");
+    document.body.classList.toggle("hide-scrolling");
     document.querySelector(".main").classList.toggle("fade-out");
     document.querySelector(".header").classList.toggle("fade-out");
 }
