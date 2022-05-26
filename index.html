@@ -31,6 +31,8 @@
   <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
 
 
   <title>C-Cab Online Taxi Booking Site</title>
@@ -49,6 +51,39 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .gallery a {
+      height: 200px;
+      width: 300px;
+      margin: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 6px 7px rgb(0, 0, 0);
+    }
+
+    .gallery a img {
+      height: 100%;
+      width: 100%;
+      transition: all 0.2s linear;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+
+
 
 </head>
 
@@ -526,6 +561,14 @@
   <script type="text/javascript" src="js/wickedpicker.js"></script>
   <script type="text/javascript">
     $('.timepicker').wickedpicker({ twentyFour: false });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+  <script>
+
+    lightGallery(document.querySelector('.gallery'));
+
   </script>
 
 </body>
